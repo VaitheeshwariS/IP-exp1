@@ -1,1 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    background: #b71c1c;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(183, 28, 28, 0.9),
+        rgba(120, 0, 0, 0.9)
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #c62828;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8e0000;
+}
+
+.btn.secondary {
+    background: white;
+    color: #b71c1c;
+}
+
+.btn.full {
+    width: 100%;
+}
+
+/* FEATURES */
+
+.features {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* FORM */
+
+.form-container {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.form-card {
+    width: 520px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-card {
+    width: 450px;
+}
+
+.form-card h2 {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.form-description {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.form-card label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea,
+.search-box select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+
+    border-color: #c62828;
+}
+
+.form-card textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-card .btn {
+    margin-top: 25px;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottom-text a {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* MESSAGES */
+
+.success-message {
+    background: #e8f5e9;
+    color: #2e7d32;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 50px 8%;
+}
+
+.dashboard h1 {
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h2 {
+    margin-bottom: 25px;
+}
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.profile-grid strong {
+    color: #777;
+}
+
+.profile-grid p {
+    margin-top: 7px;
+}
+
+.full-profile {
+    grid-column: 1 / -1;
+}
+
+.blood {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* SEARCH */
+
+.search-page {
+    padding: 60px 8%;
+}
+
+.search-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.search-box h1 {
+    margin-bottom: 10px;
+}
+
+.search-box p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.search-box form {
+    display: flex;
+    gap: 12px;
+}
+
+.search-box select {
+    flex: 1;
+}
+
+/* RESULTS */
+
+.results {
+    margin-top: 50px;
+}
+
+.results h2 {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+table th {
+    background: #b71c1c;
+    color: white;
+
+    padding: 14px;
+
+    text-align: left;
+}
+
+table td {
+    padding: 13px;
+
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background: #fafafa;
+}
+
+.no-result {
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+/* ADMIN */
+
+.admin-page {
+    padding: 50px 5%;
+}
+
+.admin-page h1 {
+    margin-bottom: 10px;
+}
+
+.admin-page > p {
+    margin-bottom: 25px;
+}
+
+.delete-btn {
+    background: #c62828;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: #8e0000;
+}
+
+/* FOOTER */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box form {
+        flex-direction: column;
+    }
+}
